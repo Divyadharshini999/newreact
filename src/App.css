@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+table th{
+  background-color: pink;
+}
+
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+
+ 
+.App-link {
+  color:green;
+}
+.App p{
+  color: purple;
+}
+
+
+body{
+  margin: -20px;
+  padding: 0px;
+  background-color: lightgray;
+}
+
+
+
+
+
+
+
+
+
