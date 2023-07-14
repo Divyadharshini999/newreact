@@ -5,8 +5,11 @@ import React ,{useState}from "react";
     const [Name,setName]= useState("")
     const [Experience,setExperience]=useState("")
     const [doj,setDoJ]= useState("")
-    const [emp,setEmp]= useState([{Name:"divyasrii",Experience:"2 years",doj:"22.06.2020"},{
+    const [emp,setEmp]= useState([{
+        id:1,Name:"divyasrii",
+    Experience:"2 years",doj:"22.06.2020"},{
         
+        id:2,
         Name: "Divya",
         Experience:"2 Years",
         doj:"22.06.2020"
@@ -20,6 +23,10 @@ import React ,{useState}from "react";
         setEmp([...emp,{Name:Name,Experience:Experience,doj:doj}])
         setName("");setExperience("");setDoJ("")
 }
+const handleIndi=(Name)=>{
+
+    setEmp(emp.filter(e=>e.Name!==Name))
+    }
 
     return(
         <div className="inputContainer">
@@ -36,7 +43,7 @@ import React ,{useState}from "react";
                 <tr>
             <td>{e.Name}</td> 
             <td>{e.Experience}</td>
-            <td> {e.doj}</td>
+            <td>{e.doj}</td><button className="delete" onClick={()=>handleIndi(e.Name)}>DELETE</button>
             </tr>
             </table>
             </div>
