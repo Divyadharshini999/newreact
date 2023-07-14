@@ -6,16 +6,13 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import AddEmployee from './components/AddEmployee';
-// import App from './App';
-// import AddEmployee from './components/AddEmployee';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
      <AddEmployee/>
-     <Crud/>
-    
+     
   </BrowserRouter>
 );
 
