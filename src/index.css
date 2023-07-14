@@ -33,7 +33,8 @@ color: white;
 
 } 
 .tableContainer td{
-  background-color: rgb(110, 110, 107);
+  background-color: rgb(250, 250, 245);
+  color: black;
 }
 .container p{
   padding: 30px;
@@ -62,6 +63,10 @@ button{
   width: 100px;
   color: white;
   margin-left: -220px;
+}
+.delete{
+  background-color: rgb(219, 55, 55);
+   margin-left: 5px; 
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
