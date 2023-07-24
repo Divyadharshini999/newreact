@@ -56,17 +56,37 @@ input[type=text]
   display: block; 
   margin: 0 325px;
 }
-button{
-  background-color:  rgb(41, 38, 39);
+ .updatebutton{
+  /* background-color:  rgb(41, 38, 39); */
+  background-color: rgb(70, 207, 116) ;
   border-radius: 10px;
   padding: 10px;
   width: 100px;
-  color: white;
+  color: black;
+  /* margin-left: -220px; */
+}
+
+.deletebutton {
+  background-color: rgb(221, 93, 93) ;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100px;
+  color: black;
+}
+.addbutton {
+  background-color: rgb(93, 112, 221) ;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100px;
+  color: black;
   margin-left: -220px;
 }
-.delete{
+.theading{
+  font-weight: bold
+}
+.delete1{
   background-color: rgb(219, 55, 55);
-   margin-left: 5px; 
+   margin-left: 50px;  
 }
 .edit{
   margin-left: 30px; 
