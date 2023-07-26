@@ -51,13 +51,15 @@ function Update_1() {
       ></input>
       <br></br>
       <input
-        type="text"
+        type="date"
+        className="date"
         placeholder="Enter the Date of Joining"
         value={dojs}
         onChange={(event) => setDoJs(event.target.value)}
       ></input>
       <br></br>
-      <button type="button" onClick={handleSubmit1} className="updatebutton">
+      <br></br>
+      <button type="button" onClick={handleSubmit1} className="updatebutton1">
         Update
       </button>
     </div>

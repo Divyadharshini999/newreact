@@ -7,9 +7,17 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 const schema = yup.object().shape({
-  names: yup.string().required(),
-  Experiences: yup.number().integer().positive().required().min(1).max(99),
-  dojs: yup.string().required(),
+  names: yup.string().required("Please enter the Name"),
+  Experiences: yup
+
+    .number()
+    //.integer()
+    .positive()
+    .required()
+    .min(0, "Minimum 1 Number is required ")
+    .max(99.9, "Maximum 2 numbers only required")
+    .required("Please enter your Experience"),
+  dojs: yup.string().required("please enter Date Of Joining "),
 });
 
 function Create_1() {
